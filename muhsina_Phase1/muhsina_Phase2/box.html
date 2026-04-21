@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>body{
+    font-family: Arial;
+    padding:20px;
+}
+
+.section{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+
+.box{
+    background-color: rgb(228, 126, 143);
+    border: 1px solid black;
+    width: 180px;
+}
+
+.margin-box{
+    margin: 50px;
+    padding: 10px;
+}
+.padding-box{
+    margin: 10px;
+    padding: 30px;
+}
+.both-box{
+    margin: 10px;
+    padding: 10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>CSS Box Model</h2>
+
+<div class="section">
+    <h3>Margin [Space Outside]</h3>
+    <div class="box margin-box">
+        This box has large <b>margin</b><br>
+        Space is <b>outside</b> the border
+    </div>
+</div>
+
+<div class="section">
+    <h3>Padding (Space Inside)</h3>
+    <div class="box padding-box">
+        This box has large <b>padding</b><br>
+        Space is <b>inside</b> the border
+    </div>
+</div>
+
+<div class="section">
+    <h3> Margin + Padding</h3>
+    <div class="box both-box">
+        This box has both <b>margin</b><br>
+        and <b>padding</b>
+    </div>
+</div>
+
+</body>
+</html>
