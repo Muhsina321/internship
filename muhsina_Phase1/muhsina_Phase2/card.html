@@ -11,25 +11,35 @@
 
     .card {
       width: 300px;
-      margin: 50px auto; 
-      padding: 20px; 
-      border: 2px solid #ddd; 
+      margin: 50px auto;
+      border: 2px solid #ddd;
       border-radius: 10px;
+      overflow: hidden; 
       background-color: #fff;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px; 
+    }
+
     .card h2 {
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
     }
 
     .card p {
-      margin-bottom: 15px; 
+      margin-bottom: 15px;
       color: #555;
     }
 
     .card button {
-      padding: 10px 15px; 
+      padding: 10px 15px;
       border: none;
       background-color: #007BFF;
       color: white;
@@ -45,9 +55,13 @@
 <body>
 
   <div class="card">
-    <h2>Internship</h2>
-    <p>An internship is a short-term work experience where you learn practical skills in a real company or organization</p>
-    <button>Read More</button>
+    <img src="./download.webp" alt="Internship Image">
+
+    <div class="card-content">
+      <h2>Internship</h2>
+      <p>An internship is a short-term work experience where you learn practical skills in a real company or organization.</p>
+      <button>Read More</button>
+    </div>
   </div>
 
 </body>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        flex: 1 1 45%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        flex-wrap: nowrap;
+      }
+
+      .box {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Responsive Layout</h1>
+  </header>
+
+  <div class="container">
+    <div class="box">mobile</div>
+    <div class="box">tablet</div>
+    <div class="box">desktop</div>
+  </div>
+
+  <footer>
+    <p>Footer Content</p>
+  </footer>
+
+</body>
+</html>
