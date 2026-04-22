@@ -1,0 +1,106 @@
+style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 15px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: #ddd;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.form-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #333;
+    color: white;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
