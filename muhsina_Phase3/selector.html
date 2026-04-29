@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query Selector</title>
+</head>
+<body>
+
+<h2>My List</h2>
+
+<ul id="myList">
+    <li>laptop</li>
+    <li>mobile</li>
+    <li>headphones</li> 
+</ul>
+
+<button onclick="addItem()">Add Item</button>
+<button onclick="removeItem()">Remove Item</button>
+
+<script>
+function addItem() {
+    let li = document.createElement("li");
+
+    li.textContent = "tablet";
+
+    document.getElementById("myList").appendChild(li);
+    document.getElementById("myList").appendChild(li);
+    document.getElementById("myList").appendChild(li);  
+}
+
+function removeItem() {
+    let list = document.getElementById("myList");
+
+    if (list.lastElementChild) {
+        list.removeChild(list.lastElementChild);
+    }
+}
+console.log("Add and Remove Element functions executed successfully");
+</script>
+
+</body>
+</html>
+
+

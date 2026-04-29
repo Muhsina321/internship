@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm">
+    name:<input type="text" id="name">
+    <button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    let name = document.getElementById("name").value;
+
+    if(name === "") {
+        document.getElementById("msg").textContent = "Name cannot be empty!";
+    } else {
+        document.getElementById("msg").textContent = "Form submitted successfully!";
+    }
+});
+console.log("Form submission prevented successfully");
+</script>
+
+</body>
+</html>

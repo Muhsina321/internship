@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="inputBox" placeholder="enter your message here">
+<p id="preview"></p>
+
+<script>
+document.getElementById("inputBox").addEventListener("input", function() {
+    document.getElementById("preview").textContent = this.value;
+});
+console.log("Input event listener added successfully");
+</script>
+
+</body>
+</html>
